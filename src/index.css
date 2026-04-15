@@ -1,0 +1,84 @@
+/* Box sizing universal */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Body base */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: sans-serif;
+}
+
+/* Formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Botones */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #0d0d12;
+  --surface: #16161f;
+  --surface-hover: #1e1e2a;
+  --border: #272736;
+  --border-highlight: #ffc300;
+
+  --text-primary: #eeeef8;
+  --text-secondary: #7878a0;
+
+  --accent: #ffc300;
+  --accent-glow: rgba(255, 195, 0, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-highlight: 0 8px 24px var(--accent-glow);
+
+  --transition: 0.2s ease;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
